@@ -143,7 +143,7 @@
 
 
   set text(
-    size: 14pt
+    size: 12pt
   )
 
   if settings.title_page.at("enabled", default: true) {
@@ -178,11 +178,12 @@
       counter(heading).update(i => i - 1)
       upper(it.body)
     } else {
+      set align(center)
       it
     }
     v(4.3pt * (0.4 + 0.2))
   }
-  set heading(numbering: "1.1")
+  set heading(numbering: "1.1.")
   set page(numbering: "1")
   // Отступ начала абазаца 1.25 см и выравнивание по ширине
   set par(
