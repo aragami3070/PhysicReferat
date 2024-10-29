@@ -33,13 +33,13 @@
 
 #include "./sections/introduction.typ"
 
-
 = Интерференция 
 
 #include "sections/section1.typ"
 
 = Спектальные отражательные свойства и спектальные коэффициенты яркости в Компьютерном зрении
 
+#include "sections/section2.typ"
 
 = Исследование (1) ""
 
