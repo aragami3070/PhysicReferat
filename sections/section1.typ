@@ -1,5 +1,6 @@
 // file:///home/aragami3070/Download/kompyuternaya-model-interferentsionnyh-kartin-kolets-nyutona.pdfПри интерференции двух частично-когерентных волн, интенсивность в выбранной точке интерференционной картины равна :
 //https://sgugit.ru/upload/science-and-innovations/conference-ssga/international-scientific-methodical-conference-actual-problems-of-education/collections-of-materials-nmk-2020/185-190.pdf
+При интерференции двух частично-когерентных волн, интенсивность в выбранной точке интерференционной картины равна :
 // (@formula:formula1)
 
 $ I = I_1 + I_2 + 2 gamma sqrt(I_1 I_2) cos(delta - delta_0) $<formula:formula1>
