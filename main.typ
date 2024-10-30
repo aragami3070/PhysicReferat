@@ -43,6 +43,10 @@
 
 = Исследование (1) ""
 
+#include "sections/section3.typ"
+
 #heading([Заключение], numbering: (i) => "   ")
+
+#include "sections/conclusion.typ"
 
 #heading([Список использованных источников], numbering: (i) => "   ")
