@@ -1,3 +1,4 @@
+#set text(font: "PT Serif")
 #import "conf.typ" : conf
 // #import "@preview/cetz:0.2.2"
 #import "@preview/plotst:0.2.0": *
@@ -31,17 +32,20 @@
 #set page(
     paper: "a4",
     margin: (
+      top: 2cm,
       bottom: 2cm,
-      left: 3.75cm,
-      right: 1.5cm
+      left: 4.25cm,
+      right: 1cm
     )
   )
 #set par(
     hanging-indent: -1.25cm,
+    leading: 0.55em,
     justify: true
   )
+#set text(font: "PT Serif")
 #set figure(supplement: "Рис.")
-#heading([Введение], numbering: (i) => "   ",)
+#heading([Введение], numbering: none)
 
 #include "./sections/introduction.typ"
 
@@ -57,8 +61,10 @@
 
 #include "sections/section3.typ"
 
-#heading([Заключение], numbering: (i) => "   ")
+#heading([Заключение], numbering: none)
 
 #include "sections/conclusion.typ"
 
-#heading([Список использованных источников], numbering: (i) => "   ")
+#heading([Список использованных источников], numbering: none)
+
+#include "sections/bib.typ"
