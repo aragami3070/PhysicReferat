@@ -1,6 +1,5 @@
 #let header() = {
   set align(center)
-  set text(font: "Cambria")
   text("МИНОБРНАУКИ РОССИИ\nФедеральное государственное бюджетное образовательное учреждение\nвысшего образования\n")
   v(0.2em)
   text(weight: "bold", "«САРАТОВСКИЙ НАЦИОНАЛЬНЫЙ ИССЛЕДОВАТЕЛЬСКИЙ
@@ -141,6 +140,7 @@
   info.title = title
   settings.title_page = settings.at("title_page", default: (:))
 
+  set text(font: "PT Serif")
 
   set text(
     size: 12pt
@@ -168,17 +168,16 @@
     [Обозначения и сокращения]
   )
   show heading: it => {
-    set text(size: 14pt)
+    set text(size: 12pt)
     if it.depth == 1 {
         pagebreak(weak: true)
         v(4.3pt * (3 + 1 - 0.2))
     }
     if caps_headings.contains(it.body) {
       set align(center)
-      counter(heading).update(i => i - 1)
+      // counter(heading).update(i => i - 1)
       upper(it.body)
     } else {
-      set align(center)
       it
     }
     v(4.3pt * (0.4 + 0.2))
@@ -186,10 +185,6 @@
   set heading(numbering: "1.1.")
   set page(numbering: "1")
   // Отступ начала абазаца 1.25 см и выравнивание по ширине
-  set par(
-    first-line-indent: 1.25cm, 
-    justify: true
-  )
   if settings.contents_page.enabled {
     make_toc(info: info)
   }

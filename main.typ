@@ -28,8 +28,20 @@
   )
 )
 
+#set page(
+    paper: "a4",
+    margin: (
+      bottom: 2cm,
+      left: 3.75cm,
+      right: 1.5cm
+    )
+  )
+#set par(
+    hanging-indent: -1.3cm,
+    justify: true
+  )
 #set figure(supplement: "Рис.")
-#heading([Введение], numbering: (i) => "   ")
+#heading([Введение], numbering: (i) => "   ",)
 
 #include "./sections/introduction.typ"
 
