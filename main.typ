@@ -37,7 +37,7 @@
     )
   )
 #set par(
-    hanging-indent: -1.3cm,
+    hanging-indent: -1.25cm,
     justify: true
   )
 #set figure(supplement: "Рис.")
